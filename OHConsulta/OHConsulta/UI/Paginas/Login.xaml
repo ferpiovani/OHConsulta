@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OHConsulta.UI.Paginas.Login"
+             BackgroundColor="#fefefe" 
+             Title="Consulta Estoque">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Config" Clicked="Config" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            
+            <StackLayout >
+                <Image Source="Logo.png" />
+            </StackLayout>
+
+            <StackLayout Padding="100,0,100,0">
+                <Entry x:Name="Senha" Placeholder="Digite a senha" IsPassword="True" HorizontalTextAlignment="Center" PlaceholderColor="#290e72" />
+            </StackLayout>
+
+            <StackLayout Padding="130,20,130,0">
+                <Button Text="Entrar" BackgroundColor="#290e72" x:Name="btnEntrar" TextColor="#FFFFFF" Clicked="Entrar"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+ </ContentPage>

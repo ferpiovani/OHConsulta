@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OHConsulta.UI.Paginas.Config"
+             BackgroundColor="#FFFFFF" 
+             Title="Configurações">
+    <ContentPage.Content>
+        <StackLayout Padding="50,10">
+            <Entry x:Name="Endereco" Placeholder="Endereço do servidor" HorizontalTextAlignment="Center" PlaceholderColor="#290e72"/>
+            <Entry x:Name="Login" Placeholder="Login" HorizontalTextAlignment="Center" PlaceholderColor="#290e72"/>
+            <Entry x:Name="CNPJ" Keyboard="Numeric" Placeholder="CPNJ" MaxLength="14" HorizontalTextAlignment="Center" PlaceholderColor="#290e72"/>
+            <Button Text="Salvar" Clicked="gravaConfig" BackgroundColor="#290e72" TextColor="#FFFFFF"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
